@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+  }
+  div {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+    animation-name: translation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform: scale(2);
+    transform: rotate(20deg);
+
+  }
+  div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+  }
+
+  div img:hover{
+    filter: blur(16px);
+  }
+   @keyframes translation {
+    50%{translate:-300px}
+    100%{translate: -750px 500px}
+    
+  } 
+/*   
+  * Appliquer une transformation pour doubler les dimensions de l'image
+  * Appliquer une transformation pour pivoter l'image de 20 degrés
+  * Appliquer une transition de 200 millisecondes de façon non linéaire
+  * Ajouter un filtre de flou seulement à l'effet de survol */
+    
